@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Practice Launch: Healthcare Practice Websites Built for Launch Day</title>
+  <meta name="description" content="We build professional websites for new healthcare practices. Dental, chiropractic, eye care, behavioral health, psychiatry, and specialist practices. One company. One call. Everything done.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230F2744'/%3E%3Cpolyline points='14,46 32,26 50,46' fill='none' stroke='%23FFFFFF' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpolyline points='14,54 32,34 50,54' fill='none' stroke='%237AAD8C' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpolyline points='14,62 32,42 50,62' fill='none' stroke='%235C8A6E' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/npl_logo_final.png" alt="New Practice Launch">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#specialties">Specialties</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resources">Resources</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-phone">(312) 869-2404</span>
+      <a href="#contact" class="nav-cta">Get Started</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#specialties">Specialties</a>
+    <a href="#work">Our Work</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#about">About</a>
+    <a href="#resources">Resources</a>
+    <a href="#contact" class="mobile-nav-cta">Get Started</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="eyebrow">
+        Healthcare Practice Websites Built for Launch Day
+      </div>
+      <h1 class="hero-h1">Your practice<br>is opening soon.</h1>
+      <span class="hero-h1-italic">Your website is already<br>your #1 salesperson.</span>
+      <div class="sage-rule"></div>
+      <p class="hero-sub">We build professional websites for new healthcare practices and handle every piece of your digital presence. One company. One call. Everything done.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Build My Practice Website</button>
+        <button class="btn-ghost" onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">
+          See Our Work <span class="arr">&#8594;</span>
+        </button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <svg class="hero-geo" viewBox="0 0 600 520" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+            <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#7AAD8C" stroke-width="0.35" opacity="0.2"/>
+          </pattern>
+          <pattern id="dots" width="36" height="36" patternUnits="userSpaceOnUse">
+            <circle cx="0" cy="0" r="1" fill="#7AAD8C" opacity="0.22"/>
+          </pattern>
+        </defs>
+        <rect width="600" height="520" fill="url(#grid)"/>
+        <rect width="600" height="520" fill="url(#dots)"/>
+        <circle cx="300" cy="260" r="220" fill="none" stroke="#5C8A6E" stroke-width="0.8" opacity="0.2"/>
+        <circle cx="300" cy="260" r="155" fill="none" stroke="#5C8A6E" stroke-width="0.8" opacity="0.18"/>
+        <circle cx="300" cy="260" r="90" fill="none" stroke="#5C8A6E" stroke-width="1" opacity="0.15"/>
+        <circle cx="300" cy="260" r="24" fill="rgba(92,138,110,0.18)" stroke="#5C8A6E" stroke-width="1.2" opacity="0.35"/>
+      </svg>
+      <div class="vert-cards">
+        <div class="vc featured">
+          <div class="vc-icon">
+            <svg width="15" height="15" fill="none" stroke="#7AAD8C" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 3-2 5-5 8-3-3-5-5-5-8a5 5 0 0 1 5-5z"/></svg>
+          </div>
+          <div class="vc-name">Dental</div>
+          <div class="vc-desc">Booking, galleries, insurance clarity</div>
+        </div>
+        <div class="vc">
+          <div class="vc-icon">
+            <svg width="15" height="15" fill="none" stroke="#7AAD8C" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="vc-name">Chiropractic</div>
+          <div class="vc-desc">Condition pages, trust-building</div>
+        </div>
+        <div class="vc">
+          <div class="vc-icon">
+            <svg width="15" height="15" fill="none" stroke="#7AAD8C" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <div class="vc-name">Behavioral Health</div>
+          <div class="vc-desc">Clinician directory, warm language</div>
+        </div>
+        <div class="vc">
+          <div class="vc-icon">
+            <svg width="15" height="15" fill="none" stroke="#7AAD8C" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <div class="vc-name">Eye Care</div>
+          <div class="vc-desc">Clinical and retail in one site</div>
+        </div>
+        <div class="vc">
+          <div class="vc-icon">
+            <svg width="15" height="15" fill="none" stroke="#7AAD8C" stroke-width="2" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div class="vc-name">Psychiatry</div>
+          <div class="vc-desc">Authority, credentials, compassion</div>
+        </div>
+        <div class="vc">
+          <div class="vc-icon">
+            <svg width="15" height="15" fill="none" stroke="#7AAD8C" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div class="vc-name">Specialists</div>
+          <div class="vc-desc">Derm, podiatry, OB/GYN and more</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST SECTION -->
+  <section class="trust-section">
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="16" height="16" fill="none" stroke="#7AAD8C" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </div>
+        <div class="trust-num">20+</div>
+        <div class="trust-label">Years of Healthcare Marketing</div>
+        <div class="trust-desc">Deep experience in what moves patients to book.</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="16" height="16" fill="none" stroke="#7AAD8C" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="trust-num">6</div>
+        <div class="trust-label">Medical Specialties We Know Deeply</div>
+        <div class="trust-desc">Not generic healthcare. Your specific practice type.</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="16" height="16" fill="none" stroke="#7AAD8C" stroke-width="2" viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <div class="trust-num">Yours</div>
+        <div class="trust-label">You Own Everything. Forever.</div>
+        <div class="trust-desc">The content, the domain, the code. All of it.</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="16" height="16" fill="none" stroke="#7AAD8C" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="trust-num">Fast</div>
+        <div class="trust-label">Quick Turnaround. Launch Ready.</div>
+        <div class="trust-desc">Live before you open. Not weeks after.</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="16" height="16" fill="none" stroke="#7AAD8C" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3-8.59A2 2 0 0 1 3.77 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l1.12-1.12a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="trust-num">1</div>
+        <div class="trust-label">The Only Call You Need to Make</div>
+        <div class="trust-desc">Website, Google, email, booking. All handled.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE PROBLEM -->
+  <section class="section section-cream section-problem">
+    <span class="sec-eye">The Problem</span>
+    <h2 class="sec-h2">Your new practice is invisible online. Let's fix that before you open.</h2>
+    <div class="three-col">
+      <div class="col-card">
+        <div class="col-title">No website means no patients.</div>
+        <p class="col-body"><strong>77% of patients</strong> research a provider online before booking. If they can't find you, they are booking with someone else.</p>
+      </div>
+      <div class="col-card">
+        <div class="col-title">No Google presence means no local visibility.</div>
+        <p class="col-body">When someone searches "dentist near me" or "chiropractor in [city]," you need to show up before your first review and before your first patient.</p>
+      </div>
+      <div class="col-card">
+        <div class="col-title">Waiting until opening day means starting from zero.</div>
+        <p class="col-body">Google takes weeks to trust a new website. Every day without one is a day your competitors pull further ahead.</p>
+      </div>
+    </div>
+    <div class="section-footer">
+      We build your complete digital presence before you open so patients can find you <span>the moment you are ready for them.</span>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section section-white">
+    <div class="tl-grid">
+      <div>
+        <span class="sec-eye">Why Timing Matters</span>
+        <h2 class="sec-h2">The practices that fill their schedules fastest launch their website first.</h2>
+        <div class="tl-steps">
+          <div class="tl-step">
+            <div class="tl-dot done">&#10003;</div>
+            <div>
+              <div class="tl-title muted">State License</div>
+              <div class="tl-desc">The credential that makes it legal to practice.</div>
+            </div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-dot done">&#10003;</div>
+            <div>
+              <div class="tl-title muted">LLC and Business Entity</div>
+              <div class="tl-desc">Your business legally exists.</div>
+            </div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-dot done">&#10003;</div>
+            <div>
+              <div class="tl-title muted">EIN and NPI Approval</div>
+              <div class="tl-desc">Federal approval to operate and bill insurance.</div>
+            </div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-dot now">&#8594;</div>
+            <div>
+              <div class="tl-title">Your Website and Digital Presence <span class="tl-badge">Right Now</span></div>
+              <div class="tl-desc">This is what we build. Before your first patient. Before your first review.</div>
+            </div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-dot next">&#9675;</div>
+            <div>
+              <div class="tl-title muted">Insurance Credentialing</div>
+              <div class="tl-desc">60 to 120 days of waiting. Your site works the whole time.</div>
+            </div>
+          </div>
+          <div class="tl-step">
+            <div class="tl-dot next">&#9675;</div>
+            <div>
+              <div class="tl-title muted">First Patient. Doors Open.</div>
+              <div class="tl-desc">Your online presence is already established.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tl-insight">
+        <span class="tl-insight-label">The Key Insight</span>
+        <div class="tl-insight-quote">Google needs weeks to trust a new website. A practice that launches its digital presence now is already generating patient inquiries by the time the doors open.</div>
+        <div class="tl-insight-body">A practice that waits until opening day starts from zero and feels it for months. The practices that fill their schedules in week one started building their online presence long before that week arrived.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE BUILD -->
+  <section class="section section-cream section-build">
+    <span class="sec-eye">What We Build</span>
+    <h2 class="sec-h2">Your website and everything that comes with it.</h2>
+    <p class="sec-sub">Most web companies build the site and hand you a bill for everything else. We build it all in. Domain, hosting, Google setup, professional email, booking integration, analytics. Everything your practice needs to be found and trusted from day one.</p>
+    <div class="build-highlight">
+      <div class="build-highlight-icon">
+        <svg width="18" height="18" fill="none" stroke="#7AAD8C" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="build-highlight-text">
+        <strong>Over $900 in additional setup work included in every website.</strong> We also offer a monthly payment plan to help with cash flow as you launch your new business. One fair price gets you everything you need to launch. The only add-on is a logo, because every great practice needs one and every great website starts with one.
+      </div>
+    </div>
+    <div class="build-grid">
+      <div class="build-card">
+        <div class="build-num">01</div>
+        <div class="build-title">Your Website</div>
+        <p class="build-body">Custom designed for your specialty. Domain secured, hosting configured, foundational SEO built into every page from day one. You own it outright.</p>
+        <span class="build-tag">Core</span>
+      </div>
+      <div class="build-card">
+        <div class="build-num">02</div>
+        <div class="build-title">Google Business Profile</div>
+        <p class="build-body">Fully built and optimized so you appear on Google Maps before you have a single review. Every service listed, every field completed.</p>
+        <span class="build-tag">Included</span>
+      </div>
+      <div class="build-card">
+        <div class="build-num">03</div>
+        <div class="build-title">Professional Email</div>
+        <p class="build-body">doctor@yourpractice.com, not gmail.com. We handle the DNS and MX setup that trips up nearly every new practice owner.</p>
+        <span class="build-tag">Included</span>
+      </div>
+      <div class="build-card">
+        <div class="build-num">04</div>
+        <div class="build-title">Appointment Booking</div>
+        <p class="build-body">We work with the leading booking platforms in each specialty. You sign up, we embed it. Patients book online from day one.</p>
+        <span class="build-tag">Included</span>
+      </div>
+      <div class="build-card">
+        <div class="build-num">05</div>
+        <div class="build-title">Google Analytics and Search Console</div>
+        <p class="build-body">Connected and configured from launch day. Know exactly where your patients are coming from from week one.</p>
+        <span class="build-tag">Included</span>
+      </div>
+      <div class="build-card">
+        <div class="build-num">06</div>
+        <div class="build-title">90-Day Social Media Playbook</div>
+        <p class="build-body">Exactly what to post before you open, week one, and through your first 90 days. Build a local audience before you see a single patient.</p>
+        <span class="build-tag">Included</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALTIES -->
+  <section class="section section-white" id="specialties">
+    <span class="sec-eye">Our Specialties</span>
+    <h2 class="sec-h2">We do not build generic healthcare websites. We build yours.</h2>
+    <p class="sec-sub">Six specialties. Deep expertise in each. Every site we build is designed around how your specific patients search, what earns their trust, and what turns a visitor into a booked appointment.</p>
+    <div class="spec-grid">
+      <a class="spec-card" href="specialties/dental/">
+        <div class="spec-icon">
+          <svg width="22" height="22" fill="none" stroke="#5C8A6E" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 3-2 5-5 8-3-3-5-5-5-8a5 5 0 0 1 5-5z"/></svg>
+        </div>
+        <div class="spec-name">Dental Practices</div>
+        <p class="spec-desc">Online booking, before and after galleries, insurance clarity, and the kind of professional design that makes a new practice look established from day one.</p>
+        <div class="spec-link">Learn more &#8594;</div>
+      </a>
+      <a class="spec-card" href="specialties/chiropractic/">
+        <div class="spec-icon">
+          <svg width="22" height="22" fill="none" stroke="#5C8A6E" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="spec-name">Chiropractic</div>
+        <p class="spec-desc">Condition-specific pages for back pain, sciatica, and sports injuries. Language that converts the skeptic and reassures the believer.</p>
+        <div class="spec-link">Learn more &#8594;</div>
+      </a>
+      <a class="spec-card" href="specialties/behavioral-health/">
+        <div class="spec-icon">
+          <svg width="22" height="22" fill="none" stroke="#5C8A6E" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <div class="spec-name">Behavioral Health Groups</div>
+        <p class="spec-desc">Clinician directory, insurance transparency, and language that is warm, destigmatizing, and safe. Sites that feel like a place someone could open up.</p>
+        <div class="spec-link">Learn more &#8594;</div>
+      </a>
+      <a class="spec-card" href="specialties/eye-care/">
+        <div class="spec-icon">
+          <svg width="22" height="22" fill="none" stroke="#5C8A6E" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <div class="spec-name">Eye Care and Optometry</div>
+        <p class="spec-desc">The only specialty that is part clinical practice and part retail storefront. Frame gallery, vision plan clarity, and full clinical credibility. We balance both.</p>
+        <div class="spec-link">Learn more &#8594;</div>
+      </a>
+      <a class="spec-card" href="specialties/psychiatry/">
+        <div class="spec-icon">
+          <svg width="22" height="22" fill="none" stroke="#5C8A6E" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="spec-name">Psychiatry</div>
+        <p class="spec-desc">Full credential transparency, condition-specific pages for ADHD, depression, trauma, and anxiety. Authority and compassion in equal measure.</p>
+        <div class="spec-link">Learn more &#8594;</div>
+      </a>
+      <a class="spec-card" href="specialties/specialists/">
+        <div class="spec-icon">
+          <svg width="22" height="22" fill="none" stroke="#5C8A6E" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div class="spec-name">Private Practice Specialists</div>
+        <p class="spec-desc">Dermatology, podiatry, OB/GYN, orthopedics, and pediatrics. Independent specialists need websites that make their expertise impossible to miss.</p>
+        <div class="spec-link">Learn more &#8594;</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section-navy">
+    <span class="sec-eye">How It Works</span>
+    <h2 class="sec-h2">From first conversation to fully launched.</h2>
+    <div class="proc-grid">
+      <div class="proc-step">
+        <div class="proc-num">1</div>
+        <div class="proc-title">Discovery Call</div>
+        <p class="proc-desc">30 minutes. We learn your practice, your specialty, your patients, and your goals. Then we get to work building the exact website your practice needs.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">2</div>
+        <div class="proc-title">We Build Everything</div>
+        <p class="proc-desc">Website, Google Business Profile, email, booking, analytics. All of it handled while you focus on opening your practice.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">3</div>
+        <div class="proc-title">You Review</div>
+        <p class="proc-desc">See everything before it goes live. We refine until it is exactly right. Your practice, your brand, your patients.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">4</div>
+        <div class="proc-title">Launch and Handoff</div>
+        <p class="proc-desc">Your site goes live. Your Google presence is live. You own everything. The content, the domain, the code. All of it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section section-cream" id="work">
+    <span class="sec-eye">Our Work</span>
+    <h2 class="sec-h2">Previous practice launches.</h2>
+    <p class="sec-sub">The sites below were built for a new practice before their first patient, before their first review, before anyone knew they existed.</p>
+    <div class="port-grid">
+      <a class="port-card" href="https://www.riversidefamilydds.com/" target="_blank" rel="noopener">
+        <div class="port-thumb live-riverside">
+          <div class="port-live-badge"><span class="dot"></span>Now Live</div>
+          <div class="port-live-brand">
+            <div class="port-live-name">Riverside Family Dentistry</div>
+            <div class="port-live-tag">"Smiles your whole family will love."</div>
+          </div>
+        </div>
+        <div class="port-info"><div class="port-tag">Dental</div><div class="port-name">Riverside Family Dentistry</div><div class="port-loc">Austin, TX</div><div class="port-view">Visit site &#8594;</div></div>
+      </a>
+      <a class="port-card" href="https://www.lakeviewpediatricdds.com/" target="_blank" rel="noopener">
+        <div class="port-thumb live-lakeview">
+          <div class="port-live-badge"><span class="dot"></span>Now Live</div>
+          <div class="port-live-brand">
+            <div class="port-live-name">Lakeview Pediatric Dental</div>
+            <div class="port-live-tag">Gentle, judgment free pediatric dentistry.</div>
+          </div>
+        </div>
+        <div class="port-info"><div class="port-tag">Dental</div><div class="port-name">Lakeview Pediatric Dental</div><div class="port-loc">Chicago, IL</div><div class="port-view">Visit site &#8594;</div></div>
+      </a>
+      <a class="port-card" href="https://www.peakperformcolorado.com/" target="_blank" rel="noopener">
+        <div class="port-thumb live-peak">
+          <div class="port-live-badge"><span class="dot"></span>Now Live</div>
+          <div class="port-live-brand">
+            <div class="port-live-name">Peak Performance Chiropractic</div>
+            <div class="port-live-tag">"Feel like yourself again."</div>
+          </div>
+        </div>
+        <div class="port-info"><div class="port-tag">Chiropractic</div><div class="port-name">Peak Performance Chiropractic</div><div class="port-loc">Denver, CO</div><div class="port-view">Visit site &#8594;</div></div>
+      </a>
+      <div class="port-card">
+        <div class="port-thumb eye"><div class="port-mock"><div class="mock-bar s"></div><div class="mock-bar m"></div><div class="mock-body"><span>Eye Care</span></div><div class="mock-bar f"></div><div class="mock-bar s"></div></div></div>
+        <div class="port-info"><div class="port-tag">Eye Care</div><div class="port-name">Pacific Vision Eye Care</div><div class="port-loc">San Diego, CA</div><div class="port-view">Coming soon</div></div>
+      </div>
+      <div class="port-card">
+        <div class="port-thumb psych"><div class="port-mock"><div class="mock-bar s"></div><div class="mock-bar m"></div><div class="mock-body"><span>Psychiatry</span></div><div class="mock-bar f"></div><div class="mock-bar s"></div></div></div>
+        <div class="port-info"><div class="port-tag">Psychiatry</div><div class="port-name">Luminary Psychiatry and Wellness</div><div class="port-loc">Boston, MA</div><div class="port-view">Coming soon</div></div>
+      </div>
+      <div class="port-card">
+        <div class="port-thumb spec"><div class="port-mock"><div class="mock-bar s"></div><div class="mock-bar m"></div><div class="mock-body"><span>Specialist</span></div><div class="mock-bar f"></div><div class="mock-bar s"></div></div></div>
+        <div class="port-info"><div class="port-tag">Private Practice Specialist</div><div class="port-name">Metro Dermatology and Skin Care</div><div class="port-loc">Phoenix, AZ</div><div class="port-view">Coming soon</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section-white" id="pricing">
+    <span class="sec-eye">Pricing</span>
+    <h2 class="sec-h2">Straightforward pricing. Everything included. Beautiful and functional on day one.</h2>
+    <p class="sec-sub">Every website includes everything your practice needs to launch. We also offer a monthly payment plan to help with cash flow as you launch your new business, because we know what it is like to start something new with limited capital, and we would rather be a partner than just a vendor.</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="price-tier">Small Practice</div>
+        <div class="price-amount">$1,999</div>
+        <div class="price-tagline">The essentials done right for a new solo practice.</div>
+        <ul class="price-features">
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Custom 5-page website</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Domain and hosting configured</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Google Business Profile setup</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Professional email setup</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Appointment booking embed</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Google Analytics and Search Console</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>You own everything</li>
+        </ul>
+        <button class="price-btn">Get Started</button>
+        <div class="price-plan">Optional payment plan: We know cash flow is tight when you are launching a new practice, so we built this option for you. $399 down, then $178/month for 12 months.</div>
+      </div>
+      <div class="price-card featured">
+        <div class="price-badge">Most Popular</div>
+        <div class="price-tier">Group Practice</div>
+        <div class="price-amount">$2,995</div>
+        <div class="price-tagline">The complete build for a growing multi-provider practice.</div>
+        <ul class="price-features">
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Custom website up to 20 pages</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Advanced on-page and local SEO</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Google Business Profile setup</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Professional email setup</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Appointment booking embed</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Google Analytics and Search Console</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>90-day social media playbook</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>You own everything</li>
+        </ul>
+        <button class="price-btn">Get Started</button>
+        <div class="price-plan">Optional payment plan: We know cash flow is tight when you are launching a new practice, so we built this option for you. $599 down, then $211/month for 12 months.</div>
+      </div>
+      <div class="price-card">
+        <div class="price-tier">Premium Specialist</div>
+        <div class="price-amount">$4,999</div>
+        <div class="price-tagline">The flagship build for specialist practices that need to dominate local search.</div>
+        <ul class="price-features">
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Custom website up to 50 pages</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Custom logo design included</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Full local SEO foundation</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Before and after gallery</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Priority build queue</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Everything in Group Practice</li>
+          <li><svg class="pf-check" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>You own everything</li>
+        </ul>
+        <button class="price-btn">Let's Talk</button>
+        <div class="price-plan">Optional payment plan: We know cash flow is tight when you are launching a new practice, so we built this option for you. $999 down, then $367/month for 12 months.</div>
+      </div>
+    </div>
+    <p class="price-note">Need a logo for the Small or Group Practice option? Add professional logo design for <strong>$499.</strong></p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section-cream" id="about">
+    <div class="about-grid">
+      <div class="about-visual">
+        <svg class="about-geo" width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="110" cy="110" r="100" stroke="#7AAD8C" stroke-width="1"/>
+          <circle cx="110" cy="110" r="70" stroke="#7AAD8C" stroke-width="1"/>
+          <circle cx="110" cy="110" r="40" stroke="#7AAD8C" stroke-width="1"/>
+        </svg>
+        <div>
+          <div class="about-name">Josh Sanders</div>
+          <div class="about-role">Founder, New Practice Launch</div>
+        </div>
+        <div class="about-stats">
+          <div class="about-stat">
+            <div class="about-stat-num">20+</div>
+            <div class="about-stat-label">Years executive level marketing experience</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">6</div>
+            <div class="about-stat-label">Medical specialties we know deeply</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">4,300+</div>
+            <div class="about-stat-label">New practices opening every month</div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-num">$0</div>
+            <div class="about-stat-label">Hidden fees. You own everything.</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="sec-eye">About</span>
+        <h2 class="sec-h2">Twenty years of strategic marketing. One focus: getting your new practice found before anyone else does.</h2>
+        <p class="about-p">We built New Practice Launch because we kept seeing the same gap. Every vendor helping a new practice open was focused on equipment, software, and credentialing. Nobody was focused on the thing that actually fills schedules: patients being able to find you online. We fix that. Specifically, exclusively, and better than anyone.</p>
+        <p class="about-p">We know what a new dental practice needs on its homepage and why it is completely different from a chiropractic site. We know how to get Google to trust a brand new practice before it has a single review. That depth of specialty knowledge is what you are hiring. Not just a web builder. A digital launch partner who has done this before, knows your industry, and gets it right the first time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-section" id="contact">
+    <span class="sec-eye" style="display:block;text-align:center;color:var(--sage-light);">Get Started</span>
+    <h2 class="cta-h2">Your practice is opening soon. Let's make sure patients can find you.</h2>
+    <p class="cta-sub">Tell us about your practice.</p>
+    <form class="cta-form" id="npl-lead-form" action="https://usebasin.com/f/301ae71af2b9" method="POST">
+      <input class="cta-input" type="text" name="name" placeholder="Your name" required>
+      <input class="cta-input" type="text" name="practice_name" placeholder="Practice name" required>
+      <select class="cta-select" name="specialty" required>
+        <option value="" disabled selected>Select your specialty</option>
+        <option>Dental</option>
+        <option>Chiropractic</option>
+        <option>Behavioral Health</option>
+        <option>Eye Care</option>
+        <option>Psychiatry</option>
+        <option>Private Practice Specialist</option>
+      </select>
+      <input class="cta-input" type="tel" name="phone" placeholder="Phone number" required>
+      <input class="cta-input" type="email" name="email" placeholder="Email address" required>
+      <button class="cta-btn" type="submit" id="npl-lead-submit">Let's Build Your Practice</button>
+    </form>
+    <div class="cta-note" id="npl-lead-note">We will call you. No spam, no pressure.</div>
+    <div class="cta-success" id="npl-lead-success">
+      <div class="cta-success-icon">
+        <svg width="26" height="26" fill="none" stroke="#FFFFFF" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+      </div>
+      <div class="cta-success-title">Thank you, we got your submission.</div>
+      <p class="cta-success-body">We will be in touch soon to talk about your new practice website. No spam, no pressure.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="assets/images/npl_logo_final.png" alt="New Practice Launch">
+        </div>
+        <p class="footer-tagline">The digital marketing launch partner for new healthcare practices.</p>
+        <p class="footer-phone">(312) 869-2404</p>
+      </div>
+      <div class="footer-col">
+        <h4>Specialties</h4>
+        <ul>
+          <li><a href="specialties/dental/">Dental Practices</a></li>
+          <li><a href="specialties/chiropractic/">Chiropractic</a></li>
+          <li><a href="specialties/behavioral-health/">Behavioral Health</a></li>
+          <li><a href="specialties/eye-care/">Eye Care</a></li>
+          <li><a href="specialties/psychiatry/">Psychiatry</a></li>
+          <li><a href="specialties/specialists/">Private Practice Specialists</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#work">Our Work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" id="resources">
+        <h4>Resources</h4>
+        <ul>
+          <li>Dental Website Guide</li>
+          <li>Chiropractic Website Guide</li>
+          <li>Behavioral Health Guide</li>
+          <li>Eye Care Website Guide</li>
+          <li>Psychiatry Website Guide</li>
+          <li>Specialist Website Guide</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">2026 New Practice Launch. All rights reserved.</span>
+      <span class="footer-copy">We work with new healthcare practices across all 50 states.</span>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+
+</body>
+</html>

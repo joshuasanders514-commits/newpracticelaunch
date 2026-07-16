@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | New Practice Launch</title>
+  <meta name="description" content="Contact New Practice Launch to start your new healthcare practice website.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230F2744'/%3E%3Cpolyline points='14,46 32,26 50,46' fill='none' stroke='%23FFFFFF' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpolyline points='14,54 32,34 50,54' fill='none' stroke='%237AAD8C' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpolyline points='14,62 32,42 50,62' fill='none' stroke='%235C8A6E' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/images/npl_logo_final.png" alt="New Practice Launch">
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#specialties">Specialties</a></li>
+      <li><a href="../index.html#work">Our Work</a></li>
+      <li><a href="../index.html#pricing">Pricing</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#resources">Resources</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-phone">(312) 869-2404</span>
+      <a href="../contact/" class="nav-cta">Get Started</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../index.html#specialties">Specialties</a>
+    <a href="../index.html#work">Our Work</a>
+    <a href="../index.html#pricing">Pricing</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#resources">Resources</a>
+    <a href="../contact/" class="mobile-nav-cta">Get Started</a>
+  </div>
+
+  <!-- SUBPAGE HERO -->
+  <section class="subpage-hero">
+    <svg class="subpage-hero-geo" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+          <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#7AAD8C" stroke-width="0.35" opacity="0.15"/>
+        </pattern>
+      </defs>
+      <rect width="1200" height="300" fill="url(#grid)"/>
+    </svg>
+    <div class="subpage-hero-inner">
+      <h1>Let's talk about your new practice.</h1>
+      <p>Tell us a little about what you are opening and we will walk you through exactly what your website needs to be ready by launch day.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-white">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <span class="sec-eye">Send a Message</span>
+        <h2 class="sec-h2" style="font-size:1.5rem;">We will get back to you shortly.</h2>
+        <form id="npl-lead-form" action="https://usebasin.com/f/301ae71af2b9" method="POST">
+          <div class="contact-field">
+            <label for="c-name">Your Name</label>
+            <input type="text" id="c-name" name="name" required>
+          </div>
+          <div class="contact-field">
+            <label for="c-practice">Practice Name</label>
+            <input type="text" id="c-practice" name="practice_name" required>
+          </div>
+          <div class="contact-field">
+            <label for="c-specialty">Specialty</label>
+            <select id="c-specialty" name="specialty" required style="width:100%;padding:12px 14px;border-radius:6px;border:1px solid var(--border);background:var(--cream);font-family:'Inter',sans-serif;font-size:0.9rem;color:var(--text);">
+              <option value="" disabled selected>Select your specialty</option>
+              <option>Dental</option>
+              <option>Chiropractic</option>
+              <option>Behavioral Health</option>
+              <option>Eye Care</option>
+              <option>Psychiatry</option>
+              <option>Private Practice Specialist</option>
+            </select>
+          </div>
+          <div class="contact-field">
+            <label for="c-phone">Phone Number</label>
+            <input type="tel" id="c-phone" name="phone" required>
+          </div>
+          <div class="contact-field">
+            <label for="c-email">Email Address</label>
+            <input type="email" id="c-email" name="email" required>
+          </div>
+          <div class="contact-field">
+            <label for="c-message">Anything else we should know?</label>
+            <textarea id="c-message" name="message"></textarea>
+          </div>
+          <button class="btn-primary" type="submit" id="npl-lead-submit" style="width:100%;justify-content:center;">Send Message</button>
+        </form>
+        <p class="cta-note" id="npl-lead-note" style="color:var(--slate);margin-top:14px;">We will call you. No spam, no pressure.</p>
+        <div class="cta-success" id="npl-lead-success" style="margin:0;">
+          <div class="cta-success-icon">
+            <svg width="24" height="24" fill="none" stroke="#FFFFFF" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <div class="cta-success-title" style="color:var(--navy);">Thank you, we got your submission.</div>
+          <p class="cta-success-body" style="color:var(--slate);">We will be in touch soon to talk about your new practice website.</p>
+        </div>
+      </div>
+      <div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg width="20" height="20" fill="none" stroke="#5C8A6E" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-title">Office</div>
+            <div class="contact-info-body">211 W Wacker Drive, Suite 1450<br>Chicago, IL 60606</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg width="20" height="20" fill="none" stroke="#5C8A6E" stroke-width="1.8" viewBox="0 0 24 24"><path d="M6 3l3 1 1 4-2 2c1 3 3 5 6 6l2-2 4 1 1 3c0 1-1 2-2 2-8 0-15-7-15-15 0-1 1-2 2-2z"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-title">Phone</div>
+            <div class="contact-info-body">(312) 869-2404</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg width="20" height="20" fill="none" stroke="#5C8A6E" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-title">Email</div>
+            <div class="contact-info-body">hello@newpracticelaunch.com</div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg width="20" height="20" fill="none" stroke="#5C8A6E" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-title">Hours</div>
+            <div class="contact-info-body">Monday to Friday, 9am to 5pm Central</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="../assets/images/npl_logo_final.png" alt="New Practice Launch">
+        </div>
+        <p class="footer-tagline">The digital marketing launch partner for new healthcare practices.</p>
+        <p class="footer-phone">(312) 869-2404</p>
+      </div>
+      <div class="footer-col">
+        <h4>Specialties</h4>
+        <ul>
+          <li><a href="../specialties/dental/">Dental Practices</a></li><li><a href="../specialties/chiropractic/">Chiropractic</a></li><li><a href="../specialties/behavioral-health/">Behavioral Health Groups</a></li><li><a href="../specialties/eye-care/">Eye Care and Optometry</a></li><li><a href="../specialties/psychiatry/">Psychiatry</a></li><li><a href="../specialties/specialists/">Private Practice Specialists</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../index.html#about">About Us</a></li>
+          <li><a href="../index.html#work">Our Work</a></li>
+          <li><a href="../index.html#pricing">Pricing</a></li>
+          <li><a href="../index.html#resources">Resources</a></li>
+          <li><a href="../contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li>Dental Website Guide</li>
+          <li>Chiropractic Website Guide</li>
+          <li>Behavioral Health Guide</li>
+          <li>Eye Care Website Guide</li>
+          <li>Psychiatry Website Guide</li>
+          <li>Specialist Website Guide</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">2026 New Practice Launch. All rights reserved.</span>
+      <span class="footer-copy">We work with new healthcare practices across all 50 states.</span>
+    </div>
+  </footer>
+
+  <script src="../shared.js"></script>
+</body>
+</html>
